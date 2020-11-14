@@ -252,6 +252,8 @@ footer {
 	}
 	.zar-wrapper {
 		width: 80%;
+		left: 10%;
+		right: 10%;
 	}
 	.zar-sidebar-kiri,.zar-sidebar-kanan {
 		width: 10%;
@@ -262,11 +264,6 @@ footer {
 	.footer-distributed {
 		width: 100%;
 	}
-	box-sizing: border-box;
-	width: 60%;
-	text-align: left;
-	font: normal 16px sans-serif;
-	padding: 45px 50px;
 }
 .footer-distributed .footer-left, .footer-distributed .footer-right {
 	text-align: center;
@@ -301,6 +298,9 @@ header {
 }
 .zar-wrapper {
 	width: 10%;
+	left: 10%;
+	right: 10%;
+	
 }
 .zar-sidebar-kiri,.zar-sidebar-kanan {
 	width: 10%;
