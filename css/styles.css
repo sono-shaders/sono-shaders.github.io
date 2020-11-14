@@ -249,7 +249,8 @@ footer {
 	}
 	.zar-wrapper {
 		width: 80%;
-		padding: 10px 10px 10px 10px;
+		padding-left: 10px;
+		pedding-right: 10px;
 	}
 	.zar-sidebar-kiri,.zar-sidebar-kanan {
 		width: 10%;
@@ -292,9 +293,11 @@ header {
 	display: block;
 	text-align: left;
 }
+
 .zar-wrapper {
 	width: 10%;
-	padding: 10px 10px 10px 10px;
+	padding-left: 10px;
+	pedding-right: 10px;
 }
 .zar-sidebar-kiri,.zar-sidebar-kanan {
 	width: 10%;
