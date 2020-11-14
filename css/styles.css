@@ -110,9 +110,7 @@ header a:hover {
 }
 .zar-topnav {
 	overflow: hidden;
-	background-color: #333;
-	margin: 0 auto;
-	z-index: 0;
+  	background-color: #333;
 	/* Stay on top */
 	width: 60%;
 	position: fixed;
