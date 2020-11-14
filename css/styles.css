@@ -252,7 +252,7 @@ footer {
 		display: none;
 	}
 	.zar-topnav a.icon {
-		float: right;
+		float: left;
 		display: block;
 	}
 	.zar-wrapper {
