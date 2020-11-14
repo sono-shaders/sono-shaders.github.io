@@ -92,8 +92,10 @@ footer {
 	}
 	.zar-wrapper {
 		width: 80%;
-		padding-left: 10px;
-		pedding-right: 10px;
+		
+	padding-left: 10%;
+	pedding-right: 10%;
+}
 	}
 	.zar-sidebar-kiri,.zar-sidebar-kanan {
 		width: 10%;
@@ -107,7 +109,7 @@ header {
 	width: 80%;
 }
 .zar-topnav {
-	width: 80%;
+	width: 100%;
 }
 .zar-topnav.responsive {
 	position: fixed;
@@ -124,9 +126,9 @@ header {
 }
 
 .zar-wrapper {
-	width: 10%;
-	padding-left: 10px;
-	pedding-right: 10px;
+	width: 100%;
+	padding-left: 10%;
+	pedding-right: 10%;
 }
 .zar-sidebar-kiri,.zar-sidebar-kanan {
 	width: 10%;
