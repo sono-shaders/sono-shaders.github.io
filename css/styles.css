@@ -235,24 +235,19 @@ footer {
 .zar-sidebar-kanan {
 	right: 0;
 }
-#canvas {
-	display: block;
-	width: 20%;
-	height: 1000px;
-	margin: 0 auto;
-}
+
 @media screen and (max-width: 600px) {
 	header {
 		width: 100%;
 	}
 	.zar-topnav {
-		width: 100%;
+		width: 80%;
 	}
 	.zar-topnav a:not(:first-child) {
 		display: none;
 	}
 	.zar-topnav a.icon {
-		float: left;
+		float: right;
 		display: block;
 	}
 	.zar-wrapper {
@@ -290,7 +285,7 @@ header {
 	width: 100%;
 }
 .zar-topnav {
-	width: 100%;
+	width: 80%;
 }
 .zar-topnav.responsive {
 	position: fixed;
@@ -312,9 +307,7 @@ header {
 .zar-sidebar-kiri,.zar-sidebar-kanan {
 	width: 0%;
 }
-canvas {
-	display: block;
-}
+
 footer {
 	width: 100%;
 }
