@@ -251,8 +251,7 @@ footer {
 		display: block;
 	}
 	.zar-wrapper {
-		margin-left: 0;
-		width: 100%;
+		width: 80%;
 	}
 	.zar-sidebar-kiri,.zar-sidebar-kanan {
 		width: 10%;
@@ -282,7 +281,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
 header {
-	width: 800%;
+	width: 80%;
 }
 .zar-topnav {
 	width: 80%;
@@ -301,8 +300,7 @@ header {
 	text-align: left;
 }
 .zar-wrapper {
-	margin-left: 0;
-	width: 100%;
+	width: 10%;
 }
 .zar-sidebar-kiri,.zar-sidebar-kanan {
 	width: 10%;
