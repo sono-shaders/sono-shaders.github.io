@@ -1,29 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://ex-zar.github.io/css/styles.css">
-<!--LINK JQUERY-->
-/*
-	<script type="text/javascript" src="jquery-3.3.1.js"></script>
-<script type="text/javascript" src="https://ex-zar.github.io/js/zar.js"></script>
-   */
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by ex-zar</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<header>
-      <h1>EX-ZAR</h1>
-       <nav>
-          <ul class="nav inline-items">
-            <li><a href="#">Home</a></li>
-         </ul>
-      </nav>
-    </header>
+    <title>EX-ZAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script>var bleep = new Audio();
+bleep.src = 'klik.mp3';</script>
+<style>
+.nav1 {}
+nav .nav1{ 
+  margin-top: 24px; 
+}
+nav .nav1 > a{ 
+background:#B9E1FF; 
+color:#000; 
+padding:10px; 
+text-decoration:none; 
+border-radius:5px; 
+font-family:"Arial Black", Gadget, sans-serif;
+ }
 
-  	
-	  	<div class="leftColumn">
+nav .nav1 > a:hover{ background: #BBEA00; }
+nav .nav1 > a:active{ background: #EEFFA8; }
+
+.preloader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background-color: rgba(24,43,111, 0.8);
+}
+
+.preloader .loading {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+font: 14px arial;
+}
+
+.loader {
+  
+  border-radius: 50%;
+  border-top: 16px solid rgba(0, 0, 255,0.7);
+  border-right: 16px solid rgba(60, 179, 113,0.7);
+  border-bottom: 16px solid rgba(255, 0, 0,0.7);
+  border-left: 16px solid rgba(238, 130, 238,0.7);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader2 {
+  border-radius: 50%;
+  border-top: 16px solid rgba(0, 0, 255,0.7);
+  border-right: 16px solid rgba(60, 179, 113,0.7);
+  border-bottom: 16px solid rgba(255, 0, 0,0.7);
+  border-left: 16px solid rgba(238, 130, 238,0.7);
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#glow {
+              /* x     y   blur spread color */
+    box-shadow: /* ie */
+                 0px -10px 15px -6px  rgba(0, 0, 255,0.7), /* top */
+                 0px  5px  15px  0px  rgba(255, 0, 0,0.3), /* bottom */
+                 5px  0px  15px  0px  rgba(60, 179, 113,0.3), /* right */
+                -5px  0px  15px  0px  rgba(238, 130, 238,0.3); /* left */
+    -webkit-box-shadow:
+                 0px -10px 15px -7px  rgba(0, 0, 255,0.7), /* top  */
+                 0px  5px  15px  0px  rgba(255, 0, 0,0.3), /* bottom */
+                 5px  0px  15px  0px  rgba(60, 179, 113,0.3), /* right */
+                -5px  0px  15px  0px  rgba(238, 130, 238,0.3); /* left */
+    -moz-box-shadow:
+                 0px -9px  10px -8px  rgba(0, 0, 255,0.9), /* top */
+                 0px  5px  10px  0px  rgba(255, 0, 0,0.3), /* bottom */
+                 5px  0px  10px  0px  rgba(60, 179, 113,0.3), /* right */
+                -5px  0px  10px  0px  rgba(238, 130, 238,0.3); /* left */
+}
+
+
+</style>
+
+<script>
+$(document).ready(function(){
+$(".preloader").fadeOut();
+})
+</script>
+
+  </head>
+  
+  <body>
+  	<div class="preloader">
+<div class="loading">
+    <div id="glow" class="loader"></div>
+<div id="glow" class="loader2"></div>   
+</div>
+</div>
+
+
+
+
+<div class="top-container">
+ <h1>Ex<span id="offset">Z</span>AR</h1>
+</div>
+
+  	<div class="header" id="myHeader">  <nav id="glow" class="nav1">
+<a href="#" onmousedown="bleep.play()">Home</a>
+<a href="#" onmousedown="bleep.play()">About Us</a>
+<a href="#" onmousedown="bleep.play()">Services</a>
+<a href="#" onmousedown="bleep.play()">Contact</a>
+</nav>
+</div>
+
+	  	<div class="content">
+       <div class=zar-slider>
+		<div class=isi-slider>
+			<img src="gambar/gambar1.jpeg" alt="Gambar 1">
+			<img src="gambar/gambar2.jpeg" alt="Gambar 2">
+			<img src="gambar/gambar3.jpeg" alt="Gambar 3">
+		</div>
+	</div>
 	  		<h2>Left Column (fluid)</h2>
 
 	  		<p>Bacon ipsum dolor sit amet capicola ball tip beef ribs leberkas, turkey biltong salami shoulder ribeye. Leberkas chuck cow andouille kevin ribeye pork strip steak pork chop beef ribs beef ball tip corned beef. Leberkas prosciutto brisket, short ribs salami cow sirloin chicken. Bacon pork belly bresaola tenderloin biltong leberkas. Strip steak beef leberkas sirloin, venison turkey hamburger kevin. Drumstick chicken ground round t-bone flank fatback jerky ball tip. Jerky ribeye sirloin t-bone.</p>
@@ -40,6 +167,25 @@
     <footer>
   		<p>&copy;2020 @Hamzar212</p>
   	</footer>
+<script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<audio autoplay="true"> <source src="musik.mp3" type="audio/mpeg"> Browsermu tidak mendukung tag audio, upgrade donk! </audio>
+
+  </body>
+</html>
+<!-- partial -->
+  
 </body>
 </html>
